@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class Project06 {
     public static void main(String[] args) {
         System.out.println("======= TASK-1 =======");
-        String[] words = {"foo”, “”, “ “, “foo bar”, “java is fun”, “ ruby "};
+        String[] words = {"foo", "", " ", "foo bar", "java is fun", " ruby "};
         System.out.println(countMultipleWords(words));
 
         System.out.println("======= TASK-2 =======");
