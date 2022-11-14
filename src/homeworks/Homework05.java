@@ -88,15 +88,19 @@ public class Homework05 {
         }
         System.out.print(result9.substring(0, result9.length() - 3));
         System.out.println("\n====== TASK-10 ======");
-        System.out.println("Please enter a name");
-        String fName = scanner.nextLine();
-        for (; ; ) {
-            if (fName.charAt(0) == 'j' || fName.charAt(0) == 'J') {
-                System.out.println("End of the program");
+        String name;
+
+        do {
+            name = ScannerHelper.getAName();
+        } while (name.toLowerCase().charAt(0) != 'j');
+
+        System.out.println("End of the program");
+
+        for (int j = 0; ; j++) {
+            name = ScannerHelper.getAName();
+            if (name.toLowerCase().charAt(j) == 'j'){
+                System.out.println("End of program");
                 break;
-            } else {
-                System.out.println("Please enter a new name");
-                fName = scanner.nextLine();
             }
         }
     }
