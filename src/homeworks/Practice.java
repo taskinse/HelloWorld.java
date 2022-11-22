@@ -14,19 +14,20 @@ import java.util.Scanner;
 
 public class Practice {
     public static void main(String[] args) {
-        String s1= "5";
-        int i1=Integer.parseInt(s1);
+        String[] word = {"A", "foo", "12" , "Foo", "bar", "a", "a", "java"};
+        ArrayList<String> task4 = new ArrayList<>();
+        for (int i = 0; i < word.length; i++){
+            for(int j = i + 1; j < word.length; j++){
+                if (word[i].equalsIgnoreCase(word[j]) && !task4.contains(word[i])){
+                    task4.add(word[i]);
+                }
+            }
+        }
+        if (task4.isEmpty()) System.out.println("There is no duplicates");
+        else for (String s : task4) {
+            System.out.println(s);
+        }
 
-        String answer="";
-        int previousNumber=1;
-        int currentNumber=0;
-        int nextNumber=1;
-        for(int i=0; i<= i1; i++){
-            answer+=currentNumber+"-";
-            previousNumber=currentNumber;
-            currentNumber=nextNumber;
-            nextNumber=previousNumber+currentNumber;
-        }System.out.println(answer.substring(0,answer.length()-3));
         }
     }
 
