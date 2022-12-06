@@ -17,7 +17,6 @@ public class Homework11 {
         checkAge(2050);
         System.out.println(" ====== Task-5 ====== ");
         System.out.println(averageOfEdges(-3, 15, -3));
-
         System.out.println(" ====== Task-6 ====== ");
         String[] arr = {"appium", "123", "ABC", "java"};
         System.out.println(Arrays.toString(noA(arr)));
